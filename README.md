@@ -1,5 +1,4 @@
 # ROS Hand Gesture Recognition
-A ROS package for estimating hand pose using Mediapipe (and Python). For more details, please check out my blog post [here](https://robodev.blog/hand-gesture-recognition-in-ros).
 
 # Installation
 1. Install all of the following dependencies using `pip` or `conda`:
@@ -12,7 +11,7 @@ A ROS package for estimating hand pose using Mediapipe (and Python). For more de
 
 2. Clone this repo into a `src` folder of a catkin workspace: 
     ```
-    $ git clone https://github.com/TrinhNC/ros_hand_gesture_recognition.git
+    $ git clone https://github.com/tungvtt1609/Finger_Detection_ROS.git
     ```
   
 3. Build this package by running: ```catkin build``` or ```catkin_make``` in a terminal in the worspace folder. For example: 
@@ -43,9 +42,9 @@ The current package can classify only six signs (classes) and I labeled them: Go
 
 There are two jupyter notebooks included in the folder src/notebooks:
 
-* [keypoint_classification_EN.ipynb](https://github.com/TrinhNC/ros_hand_gesture_recognition/blob/main/src/notebooks/keypoint_classification_EN.ipynb): a model training script for hand sign recognition.
+* [keypoint_classification_EN.ipynb](https://github.com/tungvtt1609/Finger_Detection_ROS/blob/main/src/notebooks/keypoint_classification_EN.ipynb): a model training script for hand sign recognition.
 
-* [point_history_classification.ipynb](https://github.com/TrinhNC/ros_hand_gesture_recognition/blob/main/src/notebooks/point_history_classification.ipynb): a model training script for finger gesture recognition (meaning the model can detect the movement of your fingers and not just a static sign like in the keypoint classification).
+* [point_history_classification.ipynb](https://github.com/tungvtt1609/Finger_Detection_ROS/blob/main/src/notebooks/point_history_classification.ipynb): a model training script for finger gesture recognition (meaning the model can detect the movement of your fingers and not just a static sign like in the keypoint classification).
 
 I used only the keypoint classification model in the current ROS package because it is enough for the application but you can feel free to adjust it to match yours.
 
